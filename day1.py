@@ -4,7 +4,7 @@ def fun():
     num = random.randint(1,100)
     return num
 random_num=fun()
-print(random_num)
+
 while count>=1:
     
     guess_num = int(input("guess a number: "))
@@ -15,7 +15,7 @@ while count>=1:
         if next.casefold()=="yes":
             count=7
             random_num=fun()
-            print(random_num)
+            
             continue
         else:
             print("Thank you for playing")
@@ -31,5 +31,5 @@ while count>=1:
                 print("Num is too low")
             else:
                 print("Num is too high")
-                continue 
+                
 
